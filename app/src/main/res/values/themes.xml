@@ -1,0 +1,30 @@
+<!--
+  ~ Copyright (c) 2016 Beanstream Internet Commerce, Inc. All rights reserved.
+  -->
+<resources>
+    <style name="Theme.PayForm.Demo" parent="Theme.PayForm">
+        <!--primary-->
+        <item name="android:textColorPrimary">@color/demoSecondary</item>
+        <item name="colorPrimary">@color/demoPrimary</item>
+
+        <!--accents-->
+        <item name="colorAccent">@color/demoAccent</item>
+
+        <!--backgrounds-->
+        <item name="android:colorBackground">@color/demoBackground</item>
+        <item name="android:windowBackground">@color/demoBackground</item>
+    </style>
+
+    <style name="Theme.PayForm.Custom" parent="Theme.PayForm">
+        <!--primary-->
+        <item name="android:textColorPrimary">@color/payformSecondary</item>
+        <item name="colorPrimary">@color/payformPrimary</item>
+
+        <!--accents-->
+        <item name="colorAccent">@color/payformAccent</item>
+
+        <!--backgrounds-->
+        <item name="android:colorBackground">@color/payformBackground</item>
+        <item name="android:windowBackground">@color/payformBackground</item>
+    </style>
+</resources>
