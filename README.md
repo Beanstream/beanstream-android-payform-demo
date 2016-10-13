@@ -16,7 +16,7 @@ This demo uses the [PayForm](https://github.com/Beanstream/beanstream-android-pa
 Add your Artifactory credentials to ***[USER_HOME]/.gradle/gradle.properties***
 ```
 # Artifactory Credentials
-bic_artifactory_url=https://beanstream.jfrog.io/beanstream/libs-release
+bic_artifactory_url=https://beanstream.jfrog.io/beanstream
 
 ## Replace USERNAME and PASSWORD
 bic_artifactory_user=USERNAME
