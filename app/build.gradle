@@ -21,11 +21,7 @@ android {
     repositories {
         jcenter()
         maven {
-            credentials {
-                username "${bic_artifactory_user}"
-                password "${bic_artifactory_password}"
-            }
-            url "${bic_artifactory_url}/libs-release"
+            url "https://beanstream.jfrog.io/beanstream/libs-release"
         }
     }
 }
