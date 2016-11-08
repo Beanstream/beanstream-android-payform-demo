@@ -11,14 +11,3 @@ This Android library limits the scope of a merchant's PCI compliance by removing
 
 ## PayForm Library
 This demo uses the [PayForm](https://github.com/Beanstream/beanstream-android-payform) library
-
-## Setup Artifactory Credentials
-Add your Artifactory credentials to ***[USER_HOME]/.gradle/gradle.properties***
-```
-# Artifactory Credentials
-bic_artifactory_url=https://beanstream.jfrog.io/beanstream
-
-## Replace USERNAME and PASSWORD
-bic_artifactory_user=USERNAME
-bic_artifactory_password=PASSWORD
-```
