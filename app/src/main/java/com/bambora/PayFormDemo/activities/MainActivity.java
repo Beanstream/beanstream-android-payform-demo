@@ -2,7 +2,7 @@
  * Copyright (c) 2016 Beanstream Internet Commerce, Inc. All rights reserved.
  */
 
-package com.beanstream.PayFormDemo.activities;
+package com.bambora.PayFormDemo.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -14,11 +14,11 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-import com.beanstream.PayFormDemo.R;
-import com.beanstream.payform.activities.PayFormActivity;
-import com.beanstream.payform.models.Options;
-import com.beanstream.payform.models.PayFormResult;
-import com.beanstream.payform.models.Purchase;
+import com.bambora.PayFormDemo.R;
+import com.bambora.payform.activities.PayFormActivity;
+import com.bambora.payform.models.Options;
+import com.bambora.payform.models.PayFormResult;
+import com.bambora.payform.models.Purchase;
 
 import org.json.JSONException;
 

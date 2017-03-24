@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         tools:replace="android:theme"
         android:theme="@style/Theme.PayForm.Demo">
-        <activity android:name="com.beanstream.PayFormDemo.activities.MainActivity">
+        <activity android:name="com.bambora.PayFormDemo.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
