@@ -10,8 +10,8 @@
     <color name="demoErrorText">#e62232</color>
 
     <!-- Demo Colors -->
-    <color name="payformAccent">#bcdff4</color>
-    <color name="payformBackground">#FFFFFF</color>
-    <color name="payformPrimary">#8247b5</color>
-    <color name="payformSecondary">#00a698</color>
+    <color name="checkoutAccent">#bcdff4</color>
+    <color name="checkoutBackground">#FFFFFF</color>
+    <color name="checkoutPrimary">#8247b5</color>
+    <color name="checkoutSecondary">#00a698</color>
 </resources>
