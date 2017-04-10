@@ -1,3 +1,5 @@
+<img src="https://cdn.na.bambora.com/resources/logos/bambora-logo180x92.png" />
+
 # Demo for NA Android Checkout
 
 This demonstrates how to setup and use the NA Android Checkout from a basic app.
