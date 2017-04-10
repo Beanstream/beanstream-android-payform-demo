@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">PayForm Artifactory Demo</string>
+    <string name="app_name">NA Android Checkout Demo</string>
 
     <string name="demo_pay_button">Pay by Card</string>
-    <string name="demo_pay_label">Launch the PayForm Artifactory demo</string>
+    <string name="demo_pay_label">Launch the NA Android Checkout demo</string>
 
-    <string name="demo_payform_cancelled">Payform was cancelled</string>
-    <string name="demo_payform_error">PayForm returned an error!</string>
-    <string name="demo_payform_token">XXX-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string>
+    <string name="demo_checkout_cancelled">Checkout was cancelled</string>
+    <string name="demo_checkout_error">Checkout returned an error!</string>
+    <string name="demo_checkout_token">XXX-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string>
 
     <string name="demo_settings_label_title">Use defaults for:</string>
 
