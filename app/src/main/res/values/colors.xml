@@ -2,10 +2,10 @@
 <resources>
 
     <!-- Demo Colors -->
-    <color name="demoAccent">#5bb563</color>
+    <color name="demoAccent">#8247b5</color>
     <color name="demoBackground">#FFFFFF</color>
     <color name="demoPrimary">#fbc762</color>
-    <color name="demoSecondary">#0077bd</color>
+    <color name="demoSecondary">#000000</color>
 
     <color name="demoErrorText">#e62232</color>
 
