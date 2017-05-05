@@ -1,8 +1,8 @@
 /*
- * Copyright (c) 2016 Beanstream Internet Commerce, Inc. All rights reserved.
+ * Copyright (c) 2017 Bambora.
  */
 
-package com.beanstream.PayFormDemo.activities;
+package com.bambora.na.CheckoutDemo.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -14,11 +14,11 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-import com.beanstream.PayFormDemo.R;
-import com.beanstream.payform.activities.PayFormActivity;
-import com.beanstream.payform.models.Options;
-import com.beanstream.payform.models.PayFormResult;
-import com.beanstream.payform.models.Purchase;
+import com.bambora.na.CheckoutDemo.R;
+import com.bambora.na.checkout.activities.CheckoutActivity;
+import com.bambora.na.checkout.models.Options;
+import com.bambora.na.checkout.models.CheckoutResult;
+import com.bambora.na.checkout.models.Purchase;
 
 import org.json.JSONException;
 
@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
         final Button button = (Button) findViewById(R.id.demo_pay_button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                startPayForm();
+                startCheckout();
             }
         });
     }
@@ -42,17 +42,17 @@ public class MainActivity extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-        if (requestCode == PayFormActivity.REQUEST_PAYFORM) {
+        if (requestCode == CheckoutActivity.REQUEST_CHECKOUT) {
             String error = "";
-            PayFormResult result = null;
+            CheckoutResult result = null;
 
             if (resultCode == Activity.RESULT_OK) {
-                result = data.getParcelableExtra(PayFormActivity.EXTRA_PAYFORM_RESULT);
+                result = data.getParcelableExtra(CheckoutActivity.EXTRA_CHECKOUT_RESULT);
             } else if (resultCode == Activity.RESULT_CANCELED) {
-                error = getResources().getString(R.string.demo_payform_cancelled);
+                error = getResources().getString(R.string.demo_checkout_cancelled);
             } else {
-                error = getResources().getString(R.string.demo_payform_error);
-                result = data.getParcelableExtra(PayFormActivity.EXTRA_PAYFORM_RESULT);
+                error = getResources().getString(R.string.demo_checkout_error);
+                result = data.getParcelableExtra(CheckoutActivity.EXTRA_CHECKOUT_RESULT);
             }
 
             showError(error);
@@ -60,16 +60,16 @@ public class MainActivity extends Activity {
         }
     }
 
-    private void startPayForm() {
+    private void startCheckout() {
 
         Options options = getOptionsForThisDemo();
         Purchase purchase = getPurchaseForThisDemo();
 
-        Intent intent = new Intent(PayFormActivity.ACTION_PAYFORM_LAUNCH);
-        intent.putExtra(PayFormActivity.EXTRA_OPTIONS, options);
-        intent.putExtra(PayFormActivity.EXTRA_PURCHASE, purchase);
+        Intent intent = new Intent(CheckoutActivity.ACTION_CHECKOUT_LAUNCH);
+        intent.putExtra(CheckoutActivity.EXTRA_OPTIONS, options);
+        intent.putExtra(CheckoutActivity.EXTRA_PURCHASE, purchase);
 
-        startActivityForResult(intent, PayFormActivity.REQUEST_PAYFORM);
+        startActivityForResult(intent, CheckoutActivity.REQUEST_CHECKOUT);
     }
 
     private Purchase getPurchaseForThisDemo() {
@@ -99,7 +99,7 @@ public class MainActivity extends Activity {
         }
 
         if (!((CheckBox) findViewById(R.id.demo_checkbox_theme)).isChecked()) {
-            options.setThemeResourceId(R.style.Theme_PayForm_Custom); // default: Theme.PayForm
+            options.setThemeResourceId(R.style.Theme_Checkout_Custom); // default: Theme.Checkout
         }
 
         if (!((CheckBox) findViewById(R.id.demo_checkbox_timeout)).isChecked()) {
@@ -110,15 +110,15 @@ public class MainActivity extends Activity {
     }
 
     private void showError(String error) {
-        TextView text = (TextView) findViewById(R.id.demo_payform_error);
+        TextView text = (TextView) findViewById(R.id.demo_checkout_error);
         text.setText(error);
     }
 
-    private void showResults(PayFormResult payFormResult) {
+    private void showResults(CheckoutResult checkoutResult) {
         String result = "";
         try {
-            if (payFormResult != null) {
-                result = payFormResult.toJsonObject().toString(4);
+            if (checkoutResult != null) {
+                result = checkoutResult.toJsonObject().toString(4);
             }
 
         } catch (JSONException e) {
@@ -127,7 +127,7 @@ public class MainActivity extends Activity {
 
         Log.d("showResults", result);
 
-        TextView text = (TextView) findViewById(R.id.demo_payform_results);
+        TextView text = (TextView) findViewById(R.id.demo_checkout_results);
         text.setText(result);
         text.setVisibility(View.VISIBLE);
         text.setMovementMethod(new ScrollingMovementMethod());

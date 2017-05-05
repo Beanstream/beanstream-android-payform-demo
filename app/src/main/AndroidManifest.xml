@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.beanstream.PayFormDemo">
+    package="com.bambora.na.CheckoutDemo">
 
     <application
         android:allowBackup="true"
@@ -9,8 +9,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         tools:replace="android:theme"
-        android:theme="@style/Theme.PayForm.Demo">
-        <activity android:name="com.beanstream.PayFormDemo.activities.MainActivity">
+        android:theme="@style/Theme.Checkout.Demo">
+        <activity android:name="com.bambora.na.CheckoutDemo.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

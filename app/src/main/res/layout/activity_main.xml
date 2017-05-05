@@ -1,11 +1,11 @@
 <!--
-  ~ Copyright (c) 2016 Beanstream Internet Commerce, Inc. All rights reserved.
+  ~ Copyright (c) 2017 Bambora.
   -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.beanstream.PayFormDemo.activities.MainActivity">
+    tools:context="com.bambora.na.CheckoutDemo.activities.MainActivity">
 
     <!--Settings-->
     <TableLayout
@@ -83,7 +83,7 @@
 
     <!--Results-->
     <TextView
-        android:id="@+id/demo_payform_error"
+        android:id="@+id/demo_checkout_error"
         style="@style/ErrorText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -93,11 +93,11 @@
         android:visibility="visible" />
 
     <TextView
-        android:id="@+id/demo_payform_results"
+        android:id="@+id/demo_checkout_results"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/demo_payform_error"
+        android:layout_below="@+id/demo_checkout_error"
         android:gravity="center"
-        android:text="@string/demo_payform_token"
+        android:text="@string/demo_checkout_token"
         android:visibility="gone" />
 </RelativeLayout>

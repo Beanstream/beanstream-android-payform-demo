@@ -1,8 +1,8 @@
 <!--
-  ~ Copyright (c) 2016 Beanstream Internet Commerce, Inc. All rights reserved.
+  ~ Copyright (c) 2017 Bambora.
   -->
 <resources>
-    <style name="Theme.PayForm.Demo" parent="Theme.PayForm">
+    <style name="Theme.Checkout.Demo" parent="Theme.Checkout">
         <!--primary-->
         <item name="android:textColorPrimary">@color/demoSecondary</item>
         <item name="colorPrimary">@color/demoPrimary</item>
@@ -15,16 +15,16 @@
         <item name="android:windowBackground">@color/demoBackground</item>
     </style>
 
-    <style name="Theme.PayForm.Custom" parent="Theme.PayForm">
+    <style name="Theme.Checkout.Custom" parent="Theme.Checkout">
         <!--primary-->
-        <item name="android:textColorPrimary">@color/payformSecondary</item>
-        <item name="colorPrimary">@color/payformPrimary</item>
+        <item name="android:textColorPrimary">@color/checkoutSecondary</item>
+        <item name="colorPrimary">@color/checkoutPrimary</item>
 
         <!--accents-->
-        <item name="colorAccent">@color/payformAccent</item>
+        <item name="colorAccent">@color/checkoutAccent</item>
 
         <!--backgrounds-->
-        <item name="android:colorBackground">@color/payformBackground</item>
-        <item name="android:windowBackground">@color/payformBackground</item>
+        <item name="android:colorBackground">@color/checkoutBackground</item>
+        <item name="android:windowBackground">@color/checkoutBackground</item>
     </style>
 </resources>
