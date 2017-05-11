@@ -9,9 +9,9 @@
 
     <color name="demoErrorText">#e62232</color>
 
-    <!-- Demo Colors -->
+    <!-- Custom Colors -->
     <color name="checkoutAccent">#bcdff4</color>
     <color name="checkoutBackground">#FFFFFF</color>
-    <color name="checkoutPrimary">#8247b5</color>
+    <color name="checkoutPrimary">#067AED</color>
     <color name="checkoutSecondary">#00a698</color>
 </resources>

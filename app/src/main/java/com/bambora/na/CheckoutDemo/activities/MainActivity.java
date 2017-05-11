@@ -98,7 +98,7 @@ public class MainActivity extends Activity {
             options.setIsShippingAddressRequired(false); // default: true
         }
 
-        if (!((CheckBox) findViewById(R.id.demo_checkbox_theme)).isChecked()) {
+        if (((CheckBox) findViewById(R.id.demo_checkbox_theme)).isChecked()) {
             options.setThemeResourceId(R.style.Theme_Checkout_Custom); // default: Theme.Checkout
         }
 
